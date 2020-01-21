@@ -1,0 +1,11 @@
+{
+  "name": "mosaic_voice",
+  "version": "1.0.0",
+  "description": "Open source voice therapy training assistance for trans people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robyn Felicity Heather Veitch",
+  "license": "ISC"
+}

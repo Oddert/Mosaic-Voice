@@ -1,0 +1,149 @@
+@mixin noscrollbar {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  overflow-y: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.Pathways {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  // background: #fefefe;
+  // border: 1px dashed tomato;
+  .cards {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    // @include noscrollbar;
+    display: flex;
+    min-height: 80%;
+    position: relative;
+    // border: 1px solid steelblue;
+    overflow-x: auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+    h2 {
+      margin-top: 0;
+      font-size: 30px;
+      // white-space: nowrap;
+    }
+    .Pathways-card {
+      background: #ecf0f1;
+      height: 100%;
+      min-width: 250px;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 0 20px;
+      box-shadow: 10px 10px 20px rgba(0,0,0,.3);
+      display: flex;
+      flex-direction: column;
+      color: #536476;
+      // font-size: 18px;
+      .indicator_annotation {
+        font-size: 18px;
+      }
+      .indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .indicator-inner {
+          background: #bec3c7;
+          background: #ecf0f1;
+          border-radius: 50%;
+          padding: 10px;
+          box-shadow:
+            4px 4px 8px rgba(33, 42, 44,.25),
+            -4px -4px 8px 4px rgba(255,255,255, 1);
+          .indicator-inner-blue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 32px;
+            font-weight: bold;
+            background: #3595DB;
+            color: #ecf0f1;
+          }
+        }
+      }
+      .markers {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .marker {
+          width: 30px;
+          height: 15px;
+          background: #bec3c7;
+          margin: 4px;
+          border-radius: 5px;
+          box-shadow:
+            inset 2px 2px 4px rgba(33, 42, 44,.25),
+            inset -2px -2px 4px rgba(255, 255, 255, 1);
+          &.active {
+            background: #2DCC70;
+            box-shadow:
+              2px 2px 4px rgba(33, 42, 44,.25),
+              -2px -2px 4px 2px rgba(236, 240, 241, 1);
+          }
+        }
+
+      }
+    }
+  }
+
+  .Pathway-button {
+    border: none;
+    margin: 30px 0 0 0;
+    padding: 10px;
+    font-weight: bold;
+    background: #ecf0f1;
+    transition: .13s linear;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.13), -4px -4px 4px rgba(255,255,255,.80);
+    font-size: 17px;
+    border: 4px solid #ecf0f1;
+    &:hover {
+      background: #d3dcde;
+    }
+    &:active {
+      box-shadow: inset 3px 3px 5px rgba(0,0,0,.15), inset -3px -3px 5px 2px #fff;
+    }
+    &.TrainingLink {
+      background: #E7B330;
+      color: #ecf0f1;
+      border: 4px solid #E7B330;
+      &:hover {
+        // background: #E7B330;
+        border: 4px solid #cd9a18;
+        background: #cd9a18;
+        text-decoration: underline;
+        // background: #ecc45f;
+        // color: #5c7ea3;
+      }
+      &:active {
+        background: #cd9a18;
+        box-shadow: inset 3px 3px 5px rgba(114, 86, 13, .7), inset -3px -3px 5px 2px rgba(236, 196, 95, .8);
+      }
+    }
+    &.PageLink {
+      background: #3595DB;
+      color: #ecf0f1;
+      border: 4px solid #3595DB;
+      &:hover {
+        background: #2280c3;
+        border: 4px solid #2280c3;
+        text-decoration: underline;
+      }
+      &:active {
+        background: #2280c3;
+        box-shadow: inset 3px 3px 5px rgba(15, 57, 87, .7), inset -3px -3px 5px 2px rgba(190, 221, 244, .8);
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  padding: 0 50px;
+  // background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #43FC91;
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+  font-size: 24px;
+  color: #25AF61;
+  color: #1b7e46;
+  font-size: 24px;
+  .nav_back, .nav_settings {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #1b7e46;
+  }
+  &:hover {
+  }
+}
