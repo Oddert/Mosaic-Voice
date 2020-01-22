@@ -13,6 +13,8 @@ import Test from './Pages/Test'
 import Tools from './Pages/Tools'
 import Visualise from './Pages/Visualise'
 
+import RecorderSecond from './RecorderSecond'
+
 function Container () {
   return (
     <Router>
@@ -22,6 +24,7 @@ function Container () {
       <Route exact path='/visualise' component={Visualise} />
       <Route exact path='/goals' component={Goals} />
       <Route exact path='/recorder' component={Recorder} />
+      <Route exact path='/recorder2' component={RecorderSecond} />
       {/* Welcome to Mosaic, Joe */}
       <Header />
     </Router>

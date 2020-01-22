@@ -19,6 +19,7 @@ const Analyser = props => {
   }, [rafId])
 
   useEffect(() => {
+    // rafId = requestAnimationFrame(tick)
     console.log('mount?')
   }, [])
 

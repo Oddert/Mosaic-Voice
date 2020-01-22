@@ -1,6 +1,6 @@
 
 .Sections {
-  padding: 6vw;
+  padding: 50px 6vw;
   .section {
     color: #2d3e50;
     text-decoration: none;
@@ -34,6 +34,15 @@
       box-shadow:
         inset -6px -6px 10px rgba(237, 237, 237, .75),
         inset 6px 6px 16px #9F9F9F;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .Sections {
+    .section {
+
     }
   }
 }
