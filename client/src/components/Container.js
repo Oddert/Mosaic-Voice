@@ -88,8 +88,8 @@ function Container () {
       <Route exact path='/tools' component={Tools} />
       <Route exact path='/visualise' component={Visualise} />
       <Route exact path='/goals' component={Goals} />
-      <Route exact path='/recorder' component={Recorder} />
-      <Route exact path='/recorder2' component={RecorderSecond} />
+      <Route exact path='/recorderold' component={Recorder} />
+      <Route exact path='/recorder' component={RecorderSecond} />
       <Route path='/pathway'>
         <Pathway pathway={samplePath} />
       </Route>
