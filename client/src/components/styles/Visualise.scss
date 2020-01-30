@@ -1,0 +1,17 @@
+.Visualise {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px;
+  .Visualise-content {
+    padding: 0 50px;
+    h2 {
+      text-align: left;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+    }
+  }
+}

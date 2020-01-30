@@ -1,17 +1,25 @@
 import React from 'react'
 
+import '../styles/Tools.scss'
+
 const Tools = () => (
-  <section>
+  <section className='Tools'>
     <h1>Tools</h1>
-    <h2>Quick Practice</h2>
-    <p>Breathing </p>
-    <p>Warm Up </p>
-    <p>Pitch Work </p>
-    <h2>Analyse Voice</h2>
-    <p>Pitch Recorder</p>
-    <p>Resonance Estmater</p>
-    <button>Connect to an EGG</button>
-    <button>Continous Listener</button>
+    <div className='Tools-content'>
+      <h2>Quick Practice</h2>
+      <div className='buttons'>
+        <button>Breathing <i className='fa fa-chevron-right'></i></button>
+        <button>Warm Up <i className='fa fa-chevron-right'></i></button>
+        <button>Pitch Work <i className='fa fa-chevron-right'></i></button>
+      </div>
+      <h2>Analyse The Voice</h2>
+      <div className='buttons'>
+        <button>Pitch Recorder <i className='fa fa-chevron-right'></i></button>
+        <button>Resonance Estmater <i className='fa fa-chevron-right'></i></button>
+        <button>Connect to an EGG <i className='fa fa-chevron-right'></i></button>
+        <button>Continous Listener <i className='fa fa-chevron-right'></i></button>
+      </div>
+    </div>
   </section>
 )
 

@@ -1,8 +1,13 @@
 import React from 'react'
 
-const TrainingLink = () => {
+const TrainingLink = props => {
   return (
-    <button className='Pathway-button TrainingLink'>Training Link</button>
+    <a
+      className='Pathway-button TrainingLink'
+      href={`/pathway?_id=${props._id}`}
+    >
+      Training Link
+    </a>
   )
 }
 

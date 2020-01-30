@@ -1,0 +1,53 @@
+.Pathway {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 100px;
+  .Bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bar {
+      background: #bec3c7;
+      margin: 0 10px;
+      width: 40px;
+      height: 15px;
+      border-radius: 5px;
+      &.active {
+        background: #d25400;
+      }
+    }
+  }
+  .Step--wrapper {
+    display: flex;
+    justify-content: center;
+    .Step {
+      background: #fff;
+      width: 60%;
+      padding: 50px;
+      margin-top: 50px;
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .Next-step {
+          background: #16a086;
+          padding: 10px 30px;
+          color: #ecf0f1;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Pathway {
+    .Step--wrapper {
+      .Step {
+        width: 85%;
+      }
+    }
+  }
+}
