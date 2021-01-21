@@ -4,7 +4,7 @@ Mosaic is an open source project to create a suite of assistative tools for Voic
 Front end built with React / Redux, backend built with express, progressive web app compatible.
 
 ## Live Demo
-[https://resolute-church.glitch.me/](https://resolute-church.glitch.me/)
+[https://oddert-mosaic-voice.glitch.me/](https://oddert-mosaic-voice.glitch.me/)
 
 ## Installation
 ```
@@ -13,6 +13,7 @@ $ cd Mosaic\ Voice/client
 $ npm i
 $ npm run install-client
 ```
+
 ### For development
 ```
 $ npm run dev
